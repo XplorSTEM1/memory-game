@@ -25,6 +25,10 @@ function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
   isMatch ? disableCards() : unflipCards();
+  if(firstCard.dataset.framework === secondCard.dataset.framework) 
+    return true;
+  } else {
+    return false;
 }
 
 function disableCards() {
