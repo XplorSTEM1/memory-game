@@ -5,6 +5,9 @@ let lockBoard = false;
 let firstCard, secondCard;
 
 function flipCard() {
+  if(timer.seconds == 0 && timer.minutes == 0){
+    resetTimer();
+  }
   if (lockBoard) return;
   if (this === firstCard) return;
 
