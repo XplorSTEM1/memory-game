@@ -188,11 +188,8 @@ var playAgain = function() {
   if(timer.seconds == 0 && timer.minutes == 0){
     resetTimer();
   }
-  if (isMatch($(this))) {
-    if (open.length === 0) {
-      openCard($(this)); 
-    } else if (open.length === 1) {
-      openCard($(this));
+  if (checkforMatch($(this))) {
+    if (hasFlippedCard===true)
       moveCounter++;
       updateMoveCounter();
 
