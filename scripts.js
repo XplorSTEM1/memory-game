@@ -178,6 +178,3 @@ var playAgain = function() {
   resetGame();
   modal.css("display", "none");
 };
-
-// Provides a randomized game board on page load
-$(updateCards);
