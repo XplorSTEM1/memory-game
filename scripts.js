@@ -5,9 +5,6 @@ let lockBoard = false;
 let firstCard, secondCard;
 
 function flipCard() {
-  if(timer.seconds == 0 && timer.minutes == 0){
-    resetTimer();
-  }
   if (lockBoard) return;
   if (this === firstCard) return;
 
@@ -180,4 +177,26 @@ var resetGame = function() {
 var playAgain = function() {
   resetGame();
   modal.css("display", "none");
+};
+
+// Handles primary game logic of game
+;var onClick = function() {
+  if(timer.seconds == 0 && timer.minutes == 0){
+    resetTimer();
+  }
+  if (isMatch($(this))) {
+    if (open.length === 0) {
+      openCard($(this)); 
+    } else if (open.length === 1) {
+      openCard($(this));
+      moveCounter++;
+      updateMoveCounter();
+
+      if (checkMatch()) {
+        setTimeout(setMatch, 300);
+      } else {
+        setTimeout(resetOpen, 700);
+      }
+    }
+  }
 };
