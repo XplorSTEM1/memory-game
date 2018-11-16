@@ -192,7 +192,7 @@ var playAgain = function() {
       moveCounter++;
       updateMoveCounter();
 
-      if (checkMatch()) {
+      if (checkforMatch()) {
         setTimeout(setMatch, 300);
       } else {
         setTimeout(resetOpen, 700);
