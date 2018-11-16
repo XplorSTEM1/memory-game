@@ -25,10 +25,6 @@ function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
   isMatch ? disableCards() : unflipCards();
-  if(firstCard.dataset.framework === secondCard.dataset.framework) 
-    return true;
-  } else {
-    return false;
 }
 
 function disableCards() {
@@ -48,6 +44,14 @@ function unflipCards() {
     resetBoard();
   }, 1500);
 }
+
+// Returns whether or not currently open cards match
+function checkMatch() {
+  if (open[0].children().attr("dataset.framework") === open[1].children().attr("dataset.framework")) {
+    return true;
+  } else {
+    return false;
+  }
 
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
@@ -188,12 +192,12 @@ var playAgain = function() {
   if(timer.seconds == 0 && timer.minutes == 0){
     resetTimer();
   }
-  if (checkforMatch($(this))) {
+  if (isMatch($(this))) {
     if (hasFlippedCard===true)
       moveCounter++;
       updateMoveCounter();
 
-      if (checkforMatch()) {
+      if (checkMatch()) {
         setTimeout(setMatch, 300);
       } else {
         setTimeout(resetOpen, 700);
