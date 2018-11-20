@@ -55,6 +55,7 @@ h1 {
 	justify-content: space-around;
 	align-items: center;
 	margin: 0 0 3em;
+	backface-visibility: hidden;
 }
 
 .deck .card {
@@ -63,7 +64,7 @@ h1 {
        margin: 5px;
        position: relative;
 	background: #141214;;
-	font-size: 0;
+	backface-visibility: hidden;
 	color: #ffffff;
 	border-radius: 5px;
 	cursor: pointer;
