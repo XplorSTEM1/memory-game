@@ -74,6 +74,10 @@ h1 {
 	align-items: center;
 	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 }
+.deck .card.back-face {
+	f-webkit-backface-visibility: hidden !important;
+	backface-visibility: hidden !important;
+}
 
 .deck .card.open {
 	transform: rotateY(0);
@@ -86,7 +90,8 @@ h1 {
 }
 
 .deck .card.show {
-	font-size: 33px;
+	f-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
 }
 
 .deck .card.match {
