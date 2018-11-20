@@ -77,6 +77,7 @@ h1 {
 .deck .card.back-face {
 	f-webkit-backface-visibility: hidden !important;
 	backface-visibility: hidden !important;
+	opacity: 0;
 }
 
 .deck .card.open {
@@ -87,6 +88,7 @@ h1 {
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: .75s;
+	opacity=100
 }
 
 .deck .card.show {
