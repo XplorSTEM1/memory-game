@@ -64,7 +64,8 @@ h1 {
        margin: 5px;
        position: relative;
 	background: #141214;;
-	font-size: 0;
+	-webkit-backface-visibility: hidden !important;
+	backface-visibility: hidden !important;
 	color: #ffffff;
 	border-radius: 5px;
 	cursor: pointer;
