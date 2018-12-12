@@ -45,27 +45,24 @@ h1 {
 
 
 .deck {
-	width: 640px;
-       height: 640px;
-       margin: auto;
-       display: flex;
-       flex-wrap: wrap;
-       perspective: 1000px
+	width: 85%;
+	background: #716F71;
+	padding: 1rem;
+	border-radius: 4px;
 	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 	margin: 0 0 3em;
-	
 }
 
 .deck .card {
-	width: calc(25% - 10px);
-       height: calc(33.333% - 10px);
-       margin: 5px;
-       position: relative;
+	height: 3.7rem;
+	width: 3.7rem;
+	margin: 0.2rem 0.2rem;
 	background: #141214;;
-	-webkit-backface-visibility: hidden !important;
-	backface-visibility: hidden !important;
+	font-size: 0;
 	color: #ffffff;
 	border-radius: 5px;
 	cursor: pointer;
@@ -74,15 +71,10 @@ h1 {
 	align-items: center;
 	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 }
-.deck .card.back-face {
-	f-webkit-backface-visibility: hidden !important;
-	backface-visibility: hidden !important;
-	visibility: hidden !important;
-}
 
 .deck .card.open {
 	transform: rotateY(0);
-	background: #523091;;
+	background: #02b3e4;
 	cursor: default;
 	animation-name: flipInY;
 	-webkit-backface-visibility: visible !important;
@@ -91,8 +83,7 @@ h1 {
 }
 
 .deck .card.show {
-	f-webkit-backface-visibility: visible !important;
-	backface-visibility: visible !important;
+	font-size: 33px;
 }
 
 .deck .card.match {
@@ -117,6 +108,7 @@ h1 {
 	pointer-events: none;
 	opacity: 0.9;
 }
+
 
 /*
  * Styles for the Score Panel
