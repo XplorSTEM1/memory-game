@@ -1,0 +1,30 @@
+
+.icon-tri_btrans {
+	background-image: url('png/tri_btrans.png');
+	background-repeat: no-repeat;
+}
+
+.icon-tri_gtrans {
+	background-image: url('png/tri_gtrans.png');
+	background-repeat: no-repeat;
+}
+
+.icon-lac_btrans {
+	background-image: url('png/lac_btrans.png');
+	background-repeat: no-repeat;
+}
+
+.icon-lac_gtrans {
+	background-image: url('png/lac_gtrans.png');
+	background-repeat: no-repeat;
+}
+
+.icon-lys_btrans {
+	background-image: url('png/lys_btrans.png');
+	background-repeat: no-repeat;
+}
+
+.icon-lys_gtrans {
+	background-image: url('png/lys_gtrans.png');
+	background-repeat: no-repeat;
+}
