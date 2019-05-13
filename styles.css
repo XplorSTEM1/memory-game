@@ -3,6 +3,24 @@ html {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+.icon-lactose-btrans:before {
+  content: "\e900";
+}
+.icon-lactose-gtrans:before {
+  content: "\e901";
+}
+.icon-lysine-btrans:before {
+  content: "\e902";
+}
+.icon-lysine-gtrans:before {
+  content: "\e903";
+}
+.icon-triglyceride-btrans:before {
+  content: "\e904";
+}
+.icon-triglyceride-gtrans:before {
+  content: "\e905";
+}
 
 *,
 *::before,
