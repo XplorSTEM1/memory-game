@@ -4,22 +4,22 @@ html {
     -webkit-box-sizing: border-box;
 }
 .icon-lactose-btrans:before {
-  content: "\e900";
+  content: "../png/lactose btrans.png";
 }
 .icon-lactose-gtrans:before {
-  content: "\e901";
+  content: "../png/lactose gtrans.png";
 }
 .icon-lysine-btrans:before {
-  content: "\e902";
+  content: "../png/lysine btrans.png";
 }
 .icon-lysine-gtrans:before {
-  content: "\e903";
+  content: "../png/lysine gtrans.png";
 }
 .icon-triglyceride-btrans:before {
-  content: "\e904";
+  content: "../png/triglyceride btrans.png";
 }
 .icon-triglyceride-gtrans:before {
-  content: "\e905";
+  content: "../png/triglyceride btrans.png";
 }
 
 *,
